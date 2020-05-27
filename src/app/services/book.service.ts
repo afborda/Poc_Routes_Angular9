@@ -45,7 +45,7 @@ export class BookService {
     return this.books$.pipe(
       map(
         (books) => (i >= 0 && i < books.length ? books[i] : null),
-        delay(1000)
+        delay(2000)
       )
     );
   }

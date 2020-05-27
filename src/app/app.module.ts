@@ -10,6 +10,7 @@ import { DvdComponent } from './components/dvd/dvd.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { DvdFormComponent } from './components/dvd/dvd-form/dvd-form.component';
 
 // const appRoutes: Routes = [
 //   { path: 'dvd', component: DvdComponent },
@@ -25,6 +26,7 @@ import { AppRoutingModule } from './app-routing.module';
     DvdComponent,
     PageNotFoundComponent,
     DvdDetailComponent,
+    DvdFormComponent,
   ],
   imports: [
     BrowserModule,

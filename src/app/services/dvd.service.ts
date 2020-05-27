@@ -35,7 +35,7 @@ export class DvdService {
 
   get(i: number): Observable<Dvd> {
     return this.dvds$.pipe(
-      map((dvd) => (i >= 0 && i < dvd.length ? dvd[i] : null), delay(1000))
+      map((dvd) => (i >= 0 && i < dvd.length ? dvd[i] : null), delay(2000))
     );
   }
 }

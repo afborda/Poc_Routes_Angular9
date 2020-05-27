@@ -6,7 +6,7 @@
     <button mat-icon-button color="primary" routerLink="/dvds/{{ i }}">
       <mat-icon>more_horiz</mat-icon>
     </button>
-    <button mat-icon-button color="primary">
+    <button mat-icon-button color="primary" (click)="goDetails(i, dvd)">
       <mat-icon>info</mat-icon>
     </button>
     <button mat-icon-button color="accent">
