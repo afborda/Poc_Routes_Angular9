@@ -8,9 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BookComponent } from './components/book/book.component';
 import { DvdComponent } from './components/dvd/dvd.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { Routes, RouterModule } from '@angular/router';
+// import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DvdFormComponent } from './components/dvd/dvd-form/dvd-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BookDetailComponent } from './components/book/book-detail/book-detail.component';
 
 // const appRoutes: Routes = [
 //   { path: 'dvd', component: DvdComponent },
@@ -27,14 +29,16 @@ import { DvdFormComponent } from './components/dvd/dvd-form/dvd-form.component';
     PageNotFoundComponent,
     DvdDetailComponent,
     DvdFormComponent,
+    BookDetailComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     // RouterModule.forRoot(appRoutes),
-
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
