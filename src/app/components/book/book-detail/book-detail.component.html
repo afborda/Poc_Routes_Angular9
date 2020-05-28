@@ -14,16 +14,17 @@
         fxLayoutAlign="space-between start"
         fxLayoutGap="20px"
       >
-        <button mat-raised-button color="primary">
+        <button mat-raised-button color="primary" (click)="goAuthors()">
           <mat-icon>people_outline</mat-icon>
           Authors
         </button>
 
-        <button mat-raised-button color="accent">
+        <button mat-raised-button color="accent" (click)="remove()">
           <mat-icon>delete_outline</mat-icon>
           Remove
         </button>
       </div>
     </div>
   </div>
+  <router-outlet></router-outlet>
 </div>

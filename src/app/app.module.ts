@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DvdFormComponent } from './components/dvd/dvd-form/dvd-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BookDetailComponent } from './components/book/book-detail/book-detail.component';
+import { BookAuthorsComponent } from './components/book/book-authors/book-authors.component';
 
 // const appRoutes: Routes = [
 //   { path: 'dvd', component: DvdComponent },
@@ -30,6 +31,7 @@ import { BookDetailComponent } from './components/book/book-detail/book-detail.c
     DvdDetailComponent,
     DvdFormComponent,
     BookDetailComponent,
+    BookAuthorsComponent,
   ],
   imports: [
     BrowserModule,
