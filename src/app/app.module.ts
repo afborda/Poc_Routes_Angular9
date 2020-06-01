@@ -1,3 +1,4 @@
+import { ElectronicsModule } from './components/electronics/electronics.module';
 import { DvdDetailComponent } from './components/dvd/dvd-detail/dvd-detail.component';
 import { MaterialModule } from './material.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,9 +15,6 @@ import { DvdFormComponent } from './components/dvd/dvd-form/dvd-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BookDetailComponent } from './components/book/book-detail/book-detail.component';
 import { BookAuthorsComponent } from './components/book/book-authors/book-authors.component';
-import { ElectronicsModule } from './components/electronics/electronics.module';
-import { ElectronicListComponent } from './components/electronics/electronic-list/electronic-list.component';
-import { ElectronicDetailComponent } from './components/electronics/electronic-list/electronic-detail/electronic-detail.component';
 
 // const appRoutes: Routes = [
 //   { path: 'dvd', component: DvdComponent },
@@ -35,8 +33,6 @@ import { ElectronicDetailComponent } from './components/electronics/electronic-l
     DvdFormComponent,
     BookDetailComponent,
     BookAuthorsComponent,
-    ElectronicListComponent,
-    ElectronicDetailComponent,
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,8 @@ export class ElectronicDetailComponent implements OnInit {
   }
 
   goBack() {
+    console.log('Entrei mas n fui!');
+
     this.router.navigate(['..'], { relativeTo: this.route });
   }
 }
