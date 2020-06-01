@@ -4,8 +4,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'electronics', component: ElectronicListComponent },
-  { path: 'electronics/:index', component: ElectronicDetailComponent },
+  { path: '', component: ElectronicListComponent },
+  { path: ':index', component: ElectronicDetailComponent },
+  // { path: 'electronics', component: ElectronicListComponent },
+  // { path: 'electronics/:index', component: ElectronicDetailComponent },
 ];
 
 @NgModule({

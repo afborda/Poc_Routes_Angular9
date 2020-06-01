@@ -1,3 +1,4 @@
+import { ElectronicListComponent } from './components/electronics/electronic-list/electronic-list.component';
 import { BookAuthorsComponent } from './components/book/book-authors/book-authors.component';
 import { DvdFormComponent } from './components/dvd/dvd-form/dvd-form.component';
 import { DvdDetailComponent } from './components/dvd/dvd-detail/dvd-detail.component';
@@ -11,8 +12,6 @@ import { BookDetailComponent } from './components/book/book-detail/book-detail.c
 
 const appRoutes: Routes = [
   { path: 'dvds', component: DvdComponent },
-  { path: 'dvds/new', component: DvdFormComponent },
-  { path: 'dvds/:index', component: DvdDetailComponent },
   {
     path: 'books',
     component: BookComponent,
@@ -24,6 +23,13 @@ const appRoutes: Routes = [
       },
     ],
   },
+  {
+    path: 'electronics',
+    loadChildren:
+      'src/app/components/electronics/electronics.module#ElectronicsModule',
+  },
+  { path: 'dvds/new', component: DvdFormComponent },
+  { path: 'dvds/:index', component: DvdDetailComponent },
   { path: '', pathMatch: 'full', redirectTo: 'dvds' },
   { path: '**', component: PageNotFoundComponent },
 ];

@@ -39,7 +39,7 @@ import { BookAuthorsComponent } from './components/book/book-authors/book-author
     BrowserAnimationsModule,
     MaterialModule,
     // RouterModule.forRoot(appRoutes),
-    ElectronicsModule,
+    // ElectronicsModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
