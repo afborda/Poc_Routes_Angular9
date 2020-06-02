@@ -4,7 +4,7 @@ POC -> Rotas em Angular 8+
 - Rotas Ativas,
 - Page Not Found,
 - Obtendo Parematros por rota,
-- passando paramento adicionais para rotas,
+- passando parametros adicionais para rotas,
 - Utilizando o Atributo Children,
 
 Caso tenha alguma critica construtiva pode entrar em contato:
